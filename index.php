@@ -12,7 +12,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     </head>
-    <body class="bg-dark">
+   <body class="bg-dark">
     <body>
          <div class="container py-5">
             <div class="card shadow-1g p-4">
@@ -34,7 +34,7 @@
 
                             <div class="col-md-6">
                                 <label class="form-label">Idade:</label>
-                                <input id="idade" name=idade" type="text" class="form-control" readonly placeholder="Calculada automaticamente">
+                                <input id="idade" name="idade" type="text" class="form-control" readonly placeholder="Calculada automaticamente">
                             </div>
                             </div>
 

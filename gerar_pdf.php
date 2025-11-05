@@ -24,8 +24,8 @@ $habilidades = $_POST['habilidade'];
 
 $html = '
 <style>
-  body { font-family: DejaVu Sans, sans-serif; font-size: 12px; }
-  h1 { color: #000000ff; border-bottom;}
+  body { font-family: DejaVu Sans, sans-serif; font-size: 12px; border-bottom: solid black; border-top: solid black; }
+  h1 { color: #000000ff;}
   h3 { color: #333; margin-top: 20px; }
   img { border-radius: 10px; }
   ul { padding: 0; }
