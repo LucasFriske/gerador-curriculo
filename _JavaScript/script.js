@@ -1,3 +1,20 @@
+ $(document).ready(function() {
+    function calcIdade(dateStr){
+if(!dateStr) return '';
+const dob = new Date(dateStr);
+const today = new Date();
+let age = today.getFullYear() - dob.getFullYear();
+const m = today.getMonth() - dob.getMonth();
+if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+age--;
+}
+return age;
+}
+$('#nascimento').on('change', function(){
+const d = $(this).val();
+$('#idade').val(calcIdade(d));
+});
+
  $("#addFormacao").click(function() { //Define um evento de clique para o botão com ID
         $("#formacoes").append(`
             <div class="row g-3 formacao mb-2">
@@ -13,7 +30,7 @@
             </div>
         `);
     });
-git 
+
     $("#addExperiencia").click(function() {
         $("#experiencias").append(`
             <div class="mb-3 experiencia">
@@ -29,3 +46,4 @@ git
             <input type="text" name="habilidades[]" class="form-control  mb-2" placeholder="Ex: Liderança, JavaScript, Comunicação, etc...">
         `);
     });
+});    
